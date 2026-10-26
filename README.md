@@ -12,120 +12,70 @@ Ministry of Railway
 
 ## Idea
 ```
-Project Name: RailEase – Smart and Accessible Railway Station Navigation System
+1. Interactive Station Map: Provide an interactive map displaying platforms, ticket counters, restrooms, food courts, waiting halls, lifts, and other station facilities.
 
-RailEase is a smart navigation system designed to help passengers easily find facilities and destinations inside railway stations. It provides interactive station maps, step-by-step directions, accessible routes, and voice-guided navigation.
+2. Smart Route Finder: Allow passengers to select their current location and destination to receive suitable routes with step-by-step directions.
 
-Passengers can search for platforms, ticket counters, restrooms, food courts, waiting halls, lifts, and other facilities. The system also supports digital kiosks and QR-code-based location identification. An administrator can update facility information and report temporarily blocked paths.
+3. Accessibility Navigation: Provide wheelchair-accessible routes using available lifts and ramps, along with voice-guided instructions for visually impaired passengers.
 
-The main objective is to reduce passenger confusion, save time, improve accessibility, and provide a convenient railway station experience.
+4. QR-Code Location Identification: Place QR codes at selected station locations to help passengers identify their current location and obtain directions.
+
+5. Digital Kiosk Support: Provide a touchscreen interface for passengers to search for facilities and view navigation instructions without requiring a personal smartphone.
+
+6. Station Information Updates:Allow authorized station staff to update facility locations and report blocked paths so that the navigation system can use the latest available information.
 ```
 
 
 ## Proposed Solution / Architecture Diagram
 ```
-RailEase provides a mobile-friendly web application and a digital kiosk interface for railway station navigation. Passengers can select their starting point and destination to receive suitable routes and step-by-step directions.
+<img width="1920" height="1280" alt="image" src="https://github.com/user-attachments/assets/43423324-4c80-48a7-82bb-4fa8358c1719" />
 
-The navigation engine uses station maps and facility information stored in a database to calculate routes. Voice guidance helps passengers follow directions, while accessible routing prioritizes available lifts and ramps. QR codes can help identify mapped locations. Station administrators can update facility details and mark temporarily blocked paths.
-
-### Architecture Diagram
-
-```mermaid
-flowchart TD
-    A[Passenger] --> B[Mobile Web Application]
-    C[Kiosk User] --> D[Digital Kiosk]
-    B --> E[Backend API]
-    D --> E
-    E --> F[Navigation Engine]
-    E --> G[Station Database]
-    G --> F
-    F --> H[Route and Directions]
-    H --> B
-    H --> D
-    H --> I[Voice Guidance]
-    J[Station Administrator] --> K[Admin Dashboard]
-    K --> E
 ```
 
 
 ## Use Cases
 ```
-### Actors
+<img width="1920" height="1280" alt="image" src="https://github.com/user-attachments/assets/0956adcf-9611-4e8b-b5a4-74d2af9c6790" />
 
-- **Passenger:** Searches for facilities, selects destinations, views maps, and follows navigation directions.
-- **Passenger with Accessibility Needs:** Selects accessible routes and uses voice guidance.
-- **Kiosk User:** Searches for facilities and views directions through a touchscreen kiosk.
-- **Station Administrator:** Updates facility locations, station maps, accessibility information, and blocked paths.
-
-### Main Use Cases
-
-1. Search for railway station facilities.
-2. Select the starting location and destination.
-3. View an interactive station map.
-4. Find a suitable route to the destination.
-5. Receive step-by-step navigation instructions.
-6. Enable voice-guided navigation.
-7. Choose wheelchair-accessible routes.
-8. Scan QR codes to identify mapped locations.
-9. Access navigation through digital kiosks.
-10. Update facility information and blocked paths through the administrator dashboard.
-
-### Use Case Diagram
-
-```mermaid
-flowchart TD
-    P[Passenger] --> A((Search Facilities))
-    P --> B((Select Destination))
-    P --> C((View Station Map))
-    P --> D((Get Directions))
-    P --> E((Use Voice Guidance))
-    P --> F((Scan QR Code))
-
-    W[Passenger with Accessibility Needs] --> G((Choose Accessible Route))
-    W --> E
-
-    K[Kiosk User] --> H((View Kiosk Directions))
-
-    S[Station Administrator] --> I((Update Facilities))
-    S --> J((Update Blocked Paths))
 ```
 
 
 ## Technology Stack
 ```
-- Frontend: HTML, CSS, JavaScript, React.js
-- Interactive Maps: Leaflet.js and React Leaflet
-- Optional 3D Visualization:Three.js
-- Backend: Node.js and Express.js
-- Database: MongoDB
-- Voice Guidance: Web Speech API
-- QR Code Scanning: HTML5 QR Code
-- API Communication:REST API
-- Code Editor:Visual Studio Code
-- Version Control: Git and GitHub
-- Deployment: Suitable web hosting platform
+- React.js – Frontend user interface.
+- HTML, CSS, JavaScript – Web application structure and styling.
+- Node.js – Backend runtime environment.
+- Express.js– Backend API development.
+- MongoDB – Storage of station maps, facilities, and route information.
+- Leaflet.js – Interactive map visualization.
+- Three.js – Optional 3D station map visualization.
+- Web Speech API – Voice-guided navigation.
+- QR Code Technology – Station location identification.
+- Git and GitHub – Version control and project hosting.
+- Visual Studio Code – Development environment.
 ```
 ## Dependencies
 ```
-The following software packages are proposed for developing the RailEase prototype.
+### Software Dependencies
 
-### Frontend Dependencies
+- React.js and React DOM – Frontend development.
+- Leaflet.js and React Leaflet – Interactive station maps.
+- Node.js and Express.js – Backend development.
+- Mongoose – Database connectivity with MongoDB.
+- Three.js – Optional 3D visualization.
+- HTML5 QR Code – QR-code scanning.
+- Web Speech API – Voice instructions in compatible browsers.
+- Git – Source code version control.
 
-- react – Creates the user interface.
-- react-dom– Renders the React application.
-- leaflet – Displays interactive maps.
-- react-leaflet – Integrates Leaflet maps with React.
-- three – Supports optional 3D visualization.
-- html5-qrcode – Enables QR-code scanning in compatible browsers.
+### Project Requirements and Estimated Timeline
 
-### Backend Dependencies
+- Station Map and Facility Data Collection: 10 days.
+- Navigation and Mapping Module: 10 days.
+- Frontend and Backend Development: 15 days.
+- Testing and Documentation: 5 days.
 
-- express – Creates backend APIs.
-- mongoose – Connects the backend to MongoDB.
-- cors – Configures cross-origin requests.
-- dotenv – Manages environment variables.
-- qrcode – Generates QR codes.
-- nodemon– Restarts the server during development.
+Estimated Total Development Time: 40 days.
 
-Note:These are proposed dependencies. They must be installed and configured according to the final project structure. Real-time station updates, live positioning, and railway service integration require suitable data sources and additional implementation.
+Estimated Budget: ₹50,000 (indicative estimate; actual costs depend on hosting, mapping services, hardware, and implementation requirements).
+
 ```
