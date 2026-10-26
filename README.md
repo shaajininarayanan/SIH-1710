@@ -93,17 +93,17 @@ flowchart TD
 
 ## Technology Stack
 ```
-- **Frontend:** HTML, CSS, JavaScript, React.js
-- **Interactive Maps:** Leaflet.js and React Leaflet
-- **Optional 3D Visualization:** Three.js
-- **Backend:** Node.js and Express.js
-- **Database:** MongoDB
-- **Voice Guidance:** Web Speech API
-- **QR Code Scanning:** HTML5 QR Code
-- **API Communication:** REST API
-- **Code Editor:** Visual Studio Code
-- **Version Control:** Git and GitHub
-- **Deployment:** Suitable web hosting platform
+- Frontend: HTML, CSS, JavaScript, React.js
+- Interactive Maps: Leaflet.js and React Leaflet
+- Optional 3D Visualization:Three.js
+- Backend: Node.js and Express.js
+- Database: MongoDB
+- Voice Guidance: Web Speech API
+- QR Code Scanning: HTML5 QR Code
+- API Communication:REST API
+- Code Editor:Visual Studio Code
+- Version Control: Git and GitHub
+- Deployment: Suitable web hosting platform
 ```
 ## Dependencies
 ```
@@ -111,21 +111,21 @@ The following software packages are proposed for developing the RailEase prototy
 
 ### Frontend Dependencies
 
-- `react` – Creates the user interface.
-- `react-dom` – Renders the React application.
-- `leaflet` – Displays interactive maps.
-- `react-leaflet` – Integrates Leaflet maps with React.
-- `three` – Supports optional 3D visualization.
-- `html5-qrcode` – Enables QR-code scanning in compatible browsers.
+- react – Creates the user interface.
+- react-dom– Renders the React application.
+- leaflet – Displays interactive maps.
+- react-leaflet – Integrates Leaflet maps with React.
+- three – Supports optional 3D visualization.
+- html5-qrcode – Enables QR-code scanning in compatible browsers.
 
 ### Backend Dependencies
 
-- `express` – Creates backend APIs.
-- `mongoose` – Connects the backend to MongoDB.
-- `cors` – Configures cross-origin requests.
-- `dotenv` – Manages environment variables.
-- `qrcode` – Generates QR codes.
-- `nodemon` – Restarts the server during development.
+- express – Creates backend APIs.
+- mongoose – Connects the backend to MongoDB.
+- cors – Configures cross-origin requests.
+- dotenv – Manages environment variables.
+- qrcode – Generates QR codes.
+- nodemon– Restarts the server during development.
 
-**Note:** These are proposed dependencies. They must be installed and configured according to the final project structure. Real-time station updates, live positioning, and railway service integration require suitable data sources and additional implementation.
+Note:These are proposed dependencies. They must be installed and configured according to the final project structure. Real-time station updates, live positioning, and railway service integration require suitable data sources and additional implementation.
 ```
