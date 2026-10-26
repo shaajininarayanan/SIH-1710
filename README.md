@@ -11,7 +11,7 @@ Background: Railway stations are complex environments with numerous facilities a
 Ministry of Railway
 
 ## Idea
-```
+
 1. Interactive Station Map: Provide an interactive map displaying platforms, ticket counters, restrooms, food courts, waiting halls, lifts, and other station facilities.
 
 2. Smart Route Finder: Allow passengers to select their current location and destination to receive suitable routes with step-by-step directions.
@@ -23,7 +23,7 @@ Ministry of Railway
 5. Digital Kiosk Support: Provide a touchscreen interface for passengers to search for facilities and view navigation instructions without requiring a personal smartphone.
 
 6. Station Information Updates:Allow authorized station staff to update facility locations and report blocked paths so that the navigation system can use the latest available information.
-```
+
 
 
 ## Proposed Solution / Architecture Diagram
@@ -40,7 +40,7 @@ Ministry of Railway
 
 
 ## Technology Stack
-```
+
 - React.js – Frontend user interface.
 - HTML, CSS, JavaScript – Web application structure and styling.
 - Node.js – Backend runtime environment.
@@ -52,9 +52,9 @@ Ministry of Railway
 - QR Code Technology – Station location identification.
 - Git and GitHub – Version control and project hosting.
 - Visual Studio Code – Development environment.
-```
+
 ## Dependencies
-```
+
 ### Software Dependencies
 
 - React.js and React DOM – Frontend development.
@@ -77,4 +77,4 @@ Estimated Total Development Time: 40 days.
 
 Estimated Budget: ₹50,000 (indicative estimate; actual costs depend on hosting, mapping services, hardware, and implementation requirements).
 
-```
+
